@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=no">
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/ux.js"></script>
+</head>
+
+<body class="fineone">
+
+<!-- wrap -->
+<div class="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#none" class="menu"><img src="images/btn_menu.png" alt="메뉴" /></a>
+		<h1>Home <a href="#n" class="home_more"><i></i></a></h1>
+	</div>
+	<!-- // header -->
+
+	<!-- container -->
+	<div class="container">
+		<!-- contents -->
+		<div class="contents">
+			<div class="warningTxt">
+				<p class="txt1">
+					<i class="ico"><img src="images/ico_warning.png" alt="" /></i><span>정격용&nbsp;량 이10A를초과하려 고합니다&nbsp;정격&nbsp;용량이10A 를초&nbsp;과하려고합니다.정격용량이&nbsp;10A를 초과하 려고 합니다.정격용량 이&nbsp;10A를 초과하려고 합니다.정격용량 이 10A를 초과하려고 합니다.</span>
+				</p>
+				<p class="notice_refresh"><a href="#n"><img src="images/btn_refresh3.png" alt="" /></a></p>
+				<div class="notice_more_text">
+					<ul>
+						<li class="notice_icon">
+							정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.
+						</li class="notice_icon">
+						<li class="notice_icon">
+							정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.정격용량이 
+						</li>
+						<li class="notice_icon">
+							정격용량이 10A를 초과하려고 합니다.정격용량이 10A를 초과하려고 합니다.
+						</li>
+					</ul>
+				</div>
+				<p class="notice_more"><a href="#n"><span></span></a></p>
+			</div>
+			<div class="refrash">
+				<a href="#none"><img src="images/btn_refresh.png" alt="" /></a>
+			</div>
+			<!-- VolumeArea -->
+			<div class="VolumeArea">
+				<!-- volumeList -->
+				<div class="volumeList">
+					<ul>
+						<li>
+							<div>
+								<div class="amount">
+									<div>
+										<strong>3/5</strong>
+										<span><em>Plug-In On</em></span>
+									</div>
+								</div>
+								<div class="target">Room01</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="amount">
+									<div>
+										<strong>3/5</strong>
+										<span><em>Plug-In On</em></span>
+									</div>
+								</div>
+								<div class="target">Room02</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- // volumeList -->
+			</div>
+			<!-- // VolumeArea -->
+		</div>
+		<!-- // contents -->
+	</div>
+	<!-- // container -->
+	
+	<!-- sideMenu -->
+	<div class="sideMenu">
+		<div class="mask"></div>
+		<div class="menu">
+			<a href="#none" class="close"><img src="images/btn_close.png" alt="" /></a>
+			<dl>
+				<dt>Thing</dt>
+				<dd>
+					<ul>
+						<li><a href="#none"><i class="ico"><img src="images/ico_menu1.png" alt="" /></i>Add New Thing</a></li>
+						<li><a href="#none"><i class="ico"><img src="images/ico_menu2.png" alt="" /></i>Rename Thing</a></li>
+					</ul>
+				</dd>
+				<dt>Room</dt>
+				<dd>
+					<ul>
+						<li><a href="#none"><i class="ico"><img src="images/ico_menu3.png" alt="" /></i>Rename Thing</a></li>
+					</ul>
+				</dd>
+				<dt>ETC.</dt>
+				<dd>
+					<ul>
+						<li><a href="#none"><i class="ico"><img src="images/ico_menu4.png" alt="" /></i>User Guide</a></li>
+						<li><a href="#none"><i class="ico"><img src="images/ico_menu5.png" alt="" /></i>Open Source License</a></li>
+					</ul>
+				</dd>
+				<dt>Settings</dt>
+				<dd>
+					<ul>
+						<li><a href="#none"><i class="ico"><img src="images/ico_menu7.png" alt="" /></i>Account</a></li>
+						<li><a href="#none"><i class="ico"><img src="images/ico_menu8.png" alt="" /></i>Language</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<div class="signout">
+				<a href="#none" class="btnStyle1 btn4"><span><em>Sign Out</em></span></a>
+			</div>
+		</div>
+	</div>
+	<!-- // sideMenu -->
+
+	<!-- layerPop -->
+	<div class="layerPop" style="display:none;">
+		<div class="mask"></div>
+		<div class="layerConts">
+			<div class="layerheader">
+				<p class="tit alignC">HOME 리스트</p>
+			</div>
+			<div class="layerBody">
+				<div class="choiceHome">
+					<script type="text/javascript">
+						$(function(){
+							$('.listStyle1 input').change(function(){
+								$('.listStyle1 li').removeClass('on');
+								$(this).parents('li').addClass('on');
+							});
+						
+						});
+					</script>			
+					<ul class="listStyle1">
+						<li>
+							<label class="div">
+								<span class="cell flag">
+									<img src="images/icon_master.png" alt="" />
+								</span>
+								<span class="cell txt">Mark’s Home</span>
+								<span class="cell radioCell">
+									<span class="radio">
+										<input type="radio" name="a" />
+										<span></span>
+									</span>
+								</span>
+							</label>
+						</li>
+						<li>
+							<label class="div">
+								<span class="cell flag">
+									<img src="images/icon_members.png" alt="" />
+								</span>
+								<span class="cell txt">Mark’s Workplace</span>
+								<span class="cell radioCell">
+									<span class="radio">
+										<input type="radio" name="a" />
+										<span></span>
+									</span>
+								</span>
+							</label>
+						</li>
+						<li>
+							<label class="div">
+								<span class="cell flag">
+									<img src="images/icon_members.png" alt="" />
+								</span>
+								<span class="cell txt">Mark’s HomeMark’s HomeMark’s HomeMark’s HomeMark’s HomeMark’s HomeMark’s Home</span>
+								<span class="cell radioCell">
+									<span class="radio">
+										<input type="radio" name="a" />
+										<span></span>
+									</span>
+								</span>
+							</label>
+						</li>
+						<li>
+							<label class="div">
+								<span class="cell flag">
+									<img src="images/icon_members.png" alt="" />
+								</span>
+								<span class="cell txt">Mark’s Home</span>
+								<span class="cell radioCell">
+									<span class="radio">
+										<input type="radio" name="a" />
+										<span></span>
+									</span>
+								</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+	
+				<div class="btn btnCell">
+					<div class="cell">
+						<a href="#none" class="btnStyle1 btn1"><span><em>확인</em></span></a>
+					</div>
+					<div class="cell">
+						<a href="#none" class="btnStyle1 btn2"><span><em>취소</em></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // layerPop -->
+
+
+	
+</div>
+<!-- // wrap -->
+
+
+</body>
+</html>
